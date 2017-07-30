@@ -1,5 +1,5 @@
 # jupyter-ds
-Docker Setup for Interactive Data Science; The Image contains Anaconda, Jupyter, Java8, PixieDust, Spark, Dataframe Profiling; with example notebook combining all together.
+Docker Setup for Interactive Data Science; The Image contains Anaconda, Jupyter, Java8, PixieDust, Spark, Scala 2.11.8, Dataframe Profiling; with example notebook combining all together.
 
 Anaconda Version ```4.0.0```; all supported packages https://docs.continuum.io/anaconda/packages/pkg-docs
 
