@@ -10,4 +10,4 @@ The Dataframe profiling package source: https://github.com/julioasotodv/spark-df
 
 Run the image directly: ```docker run -p 8888:8888 -v ${PATH_TO_YOUR_DATA_DIR}:/usr/notebooks/shared -d siouffy/jupyter:ds-1.0```. 
   - ${PATH_TO_YOUR_DATA_DIR} will be mounted on /usr/notebooks/shared in the container where u can easily access your data from spark
-  - The jupyter UI will be available on localhost:8888
+  - The jupyter UI will be available on ```localhost:8888```. The default directory will contain PixieDust Tutorial examples, and a data directory with a sample notebook using PixieDust with the Dataframe profiling package. The shared directory shall contain all the user files which are mounted from ${PATH_TO_YOUR_DATA_DIR}
