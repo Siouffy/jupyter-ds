@@ -1,7 +1,13 @@
 # jupyter-ds
-Docker Setup for Interactive Data Science; The Image contains Spark, Jupyter, PixieDust, Dataframe Profiling with example notebook
+Docker Setup for Interactive Data Science; The Image contains Anaconda, Jupyter, Java8, PixieDust, Spark, Dataframe Profiling; with example notebook combining all together.
 
-Extending the pixie-dust docker image https://github.com/markwatsonatx/Dockerfiles/blob/master/pixiedust-python35-1.0.5/Dockerfile
-More information on the project and usage: https://ibm-watson-data-lab.github.io/pixiedust/use.html
+Anaconda Version ```4.0.0```; all supported packages https://docs.continuum.io/anaconda/packages/pkg-docs
 
-Uses Dataframe profiling package from: https://github.com/julioasotodv/spark-df-profiling
+The image extending the ```pixiedust``` docker image https://github.com/markwatsonatx/Dockerfiles/blob/master/pixiedust-python35-1.0.5/Dockerfile. More information on the project and usage: https://ibm-watson-data-lab.github.io/pixiedust/use.html
+
+The Dataframe profiling package source: https://github.com/julioasotodv/spark-df-profiling
+
+
+Run the image directly: ```docker run -p 8888:8888 -v ${PATH_TO_YOUR_DATA_DIR}:/usr/notebooks/shared -d siouffy/jupyter:ds-1.0```. 
+  - ${PATH_TO_YOUR_DATA_DIR} will be mounted on /usr/notebooks/shared in the container where u can easily access your data from spark
+  - The jupyter UI will be available on localhost:8888
